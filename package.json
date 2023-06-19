@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch  src/resources/scss/ --output src/public/css/",
+    "beautiful": "lint-staged",
     "sass": "sass --watch  src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +16,14 @@
   },
   "author": "ton,thanhhuy",
   "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
   "bugs": {
     "url": "https://github.com/thanhhuy1234ok/Project2-Quan_Ly_Truong_Dai_Hoc/issues"
   },
@@ -25,9 +34,12 @@
     "mongoose": "^7.3.0"
   },
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
     "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
     "sass": "^1.63.4"
   }
 }
