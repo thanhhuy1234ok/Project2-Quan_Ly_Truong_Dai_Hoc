@@ -21,10 +21,10 @@ app.set('views', path.join(__dirname, 'resources/views'));
 app.get('/', (req, res) => {
   res.render('home');
 })
-app.get('/news', (req, res) => {
+app.get('/page', (req, res) => {
   res.render('news');
 })
-
+//  npm i prettier lint-staged husky --save-dev
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
