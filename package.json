@@ -1,0 +1,29 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "Tạo dự án quản lý trường đại học",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhhuy1234ok/Project2-Quan_Ly_Truong_Dai_Hoc.git"
+  },
+  "author": "ton,thanhhuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhhuy1234ok/Project2-Quan_Ly_Truong_Dai_Hoc/issues"
+  },
+  "homepage": "https://github.com/thanhhuy1234ok/Project2-Quan_Ly_Truong_Dai_Hoc#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "mongoose": "^7.3.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
