@@ -1,4 +1,14 @@
-h1 {
-  color: red;
-  font-size: 20px;
-  padding: 10px; }
+* {
+  font-family: Montserrat, sans-serif; }
+
+.main-header {
+  display: flex; }
+
+.main-header {
+  width: 20%; }
+
+.header-nav {
+  width: 60%; }
+
+.header-tuvan {
+  width: 20%; }
